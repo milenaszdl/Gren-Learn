@@ -1,0 +1,106 @@
+
+/*карточка */
+.card.border-success {
+    border: 1px solid #c9ee92 !important;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.card.border-success:hover {
+    box-shadow: 0 4px 12px #b4bd49;
+}
+
+/*заголовок */
+.card-title.text-success {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+
+    /*градиент */
+    background: linear-gradient(to bottom, #a5af36, #226100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/*анонс */
+.card-text {
+    color: #226100;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+/*автор */
+.card-author.text-success {
+    color: #226100 !important;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 20px !important;
+    background-color: #F5FFEA;
+    width: fit-content;
+    padding: 5px;
+}
+
+/*кнопка-ссылка */
+.btn-outline-success {
+    color: #97a12d !important;
+    border-color: #97a12d !important;
+    font-weight: 500;
+    font-size: 1.1rem !important;
+    transition: all 0.3s ease;
+    padding: 15px !important;
+    border-radius: 20px !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #97a12d !important;
+    color: #fff !important;
+}
+
+/*отступы между карточками */
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.link-btn {
+    position: relative;
+    background: transparent;
+}
+
+/*иконка слева */
+.link-btn::before {
+    content: '';
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    background: url('/upload/icons/link-yellow.svg') no-repeat center center;
+    background-size: contain;
+    transition: background 0.3s ease;
+}
+
+/*ховер - меняем иконку */
+.link-btn:hover::before {
+    background: url('/upload/icons/link-white.svg') no-repeat center center;
+    background-size: contain;
+}
+
+
+/*адаптивность: для мобильных можно подправить */
+@media (max-width: 767px) {
+    .card-title.text-success {
+        font-size: 1.1rem;
+    }
+    .card-text {
+        font-size: 0.9rem;
+    }
+    .btn-outline-success {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}

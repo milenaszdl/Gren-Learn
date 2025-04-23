@@ -1,0 +1,66 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Поделиться опытом");
+?><h3>Мои записи</h3>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:iblock.element.add", 
+	"gren-my-wiki", 
+	array(
+		"IBLOCK_TYPE" => "grenlearn",
+		"IBLOCK_ID" => "7",
+		"PROPERTY_CODES" => array(
+			0 => "9",
+			1 => "10",
+			2 => "NAME",
+			3 => "IBLOCK_SECTION",
+			4 => "PREVIEW_TEXT",
+			5 => "DETAIL_TEXT",
+		),
+		"PROPERTY_CODES_REQUIRED" => array(
+			0 => "NAME",
+			1 => "PREVIEW_TEXT",
+			2 => "DETAIL_TEXT",
+		),
+		"GROUPS" => array(
+			0 => "2",
+		),
+		"ALLOW_EDIT" => "Y",
+		"ALLOW_DELETE" => "Y",
+		"USE_CAPTCHA" => "N",
+		"USER_MESSAGE_ADD" => "Запись успешно добавлена",
+		"USER_MESSAGE_EDIT" => "Запись успешно обновлена",
+		"LIST_URL" => "/wiki/razrabotka/",
+		"DETAIL_URL" => "/wiki/razrabotka/detail.php?ELEMENT_ID=#ELEMENT_ID#",
+		"CUSTOM_TITLE_NAME" => "Заголовок записи",
+		"CUSTOM_TITLE_PREVIEW_TEXT" => "Краткое описание",
+		"CUSTOM_TITLE_DETAIL_TEXT" => "Полное описание",
+		"CUSTOM_TITLE_FILES" => "Прикрепленные файлы",
+		"CUSTOM_TITLE_CODE" => "Фрагмент кода",
+		"COMPONENT_TEMPLATE" => "gren-my-wiki",
+		"NAV_ON_PAGE" => "10",
+		"DEFAULT_INPUT_SIZE" => "30",
+		"RESIZE_IMAGES" => "N",
+		"STATUS_NEW" => "N",
+		"ELEMENT_ASSOC" => "CREATED_BY",
+		"MAX_USER_ENTRIES" => "100000",
+		"MAX_LEVELS" => "100000",
+		"LEVEL_LAST" => "N",
+		"MAX_FILE_SIZE" => "0",
+		"PREVIEW_TEXT_USE_HTML_EDITOR" => "N",
+		"DETAIL_TEXT_USE_HTML_EDITOR" => "N",
+		"SEF_MODE" => "N",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"CUSTOM_TITLE_TAGS" => "",
+		"CUSTOM_TITLE_DATE_ACTIVE_FROM" => "",
+		"CUSTOM_TITLE_DATE_ACTIVE_TO" => "",
+		"CUSTOM_TITLE_IBLOCK_SECTION" => "",
+		"CUSTOM_TITLE_PREVIEW_PICTURE" => "",
+		"CUSTOM_TITLE_DETAIL_PICTURE" => "",
+		"STATUS" => "ANY"
+	),
+	false
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

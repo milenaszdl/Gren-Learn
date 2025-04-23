@@ -1,0 +1,353 @@
+h3{
+    margin-left: 17px !important;
+}
+.profile-component {
+    /* Дополнительные отступы или фон, если нужно */
+    padding: 100px !important;
+    padding-top: 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #ffffff;
+    border-radius: 50px;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+}
+.col-md-3 {
+    width: fit-content !important;
+}
+.col-md-9 {
+    /* margin-left: 100px; */
+}
+
+.mt-4 {
+    margin-top: 0px !important;
+}
+
+@media (min-width: 1400px) {
+    .row {
+        width: 1400px !important;
+        flex-direction: row !important;
+    }
+}
+
+.row {
+    margin-left: 240px !important;
+}
+
+/* Фото */
+.profile-photo {
+    width: 300px !important;
+    /* max-width: 100%; */
+    border-radius: 17px; /* Угол скругления */
+    /* object-fit: cover;   Если нужно обрезать фото по контейнеру */
+    margin-bottom: 0rem !important;
+    box-shadow: 3px 15px 12px #c2da9b;
+}
+
+/* Заглушка для фото (если нет личного фото) */
+.profile-no-photo {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    margin: 0 auto 0rem auto;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Имя (ФИО) — крупный шрифт */
+.profile-fio {
+    margin-top: 0;
+    font-weight: 300 !important;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to bottom, #a5af36, #226100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Email — чуть меньше, более нейтральный цвет */
+.profile-email {
+    color: #97A12D;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 400 !important;
+}
+
+/* Текстовые строчки (Отдел, Должность и т.п.) */
+.profile-line {
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    color: #226100;
+}
+
+/* Поля UF_... */
+.profile-userfields .profile-field {
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+}
+
+/*стилизовать кнопку */
+.btn-primary {
+    background-color: #85b969 !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+    margin-right: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff !important;
+    color: #226100!important;
+    border: none !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"] {
+    color:#226100;
+    border-radius: 7px;
+    border: 1px solid #72b44e;
+    padding: 5px;
+    min-width: 500px;
+}
+
+
+tr {
+    border-width: 17px !important;
+    border-color: transparent !important;
+}
+
+.user-field {
+    border-width: 0px !important;
+}
+
+.enumeration-select select{
+    color: #226100;
+    border-radius: 7px;
+    border: 1px solid #72b44e;
+    padding: 5px;
+    min-width: 500px;
+}
+
+input[value="Добавить"] {
+    color:#226100;
+    border-radius: 7px;
+    border: 1px solid #72b44e;
+    padding: 5px;
+    min-width: 500px;
+    background-color: #ffffff !important; 
+}
+
+
+input[name="save"] {
+    background-color: #85b969 !important;
+    color: white !important;
+    border: none !important;
+    padding: 8px 17px !important;
+    font-size: 17px !important;
+    border-radius: 10px !important;
+    margin-right: 10px;
+    max-width: fit-content !important;
+    min-width: 117px;
+}
+input[name="save"]:hover {
+    background-color: #ffffff !important;
+    color: #226100 !important;
+    border: none !important;
+    padding: 8px 17px !important;
+    font-size: 17px !important;
+    border-radius: 10px !important;
+    margin-right: 10px;
+    max-width: fit-content !important;
+    min-width: 117px;
+}
+
+.btn-secondary {
+    background-color: #ffffff !important;
+    color: #98962c!important;
+    border: none !important;
+    padding: 8px 17px !important;
+    font-size: 17px !important;
+    border-radius: 10px !important;
+    margin-right: 10px;
+    max-width: fit-content !important;
+    min-width: 117px;
+}
+
+.btn-secondary:hover {
+    background-color: #98962c !important;
+    color: #ffffff!important;
+    border: none !important;
+}
+
+
+
+/* Стилизация radio-блоков (например, Эксперт Case Lab) */
+tr td.user-field label,
+tr td.user-field input[type="radio"] {
+    margin-right: 8px !important;
+    margin-left: 5px !important;
+    vertical-align: middle;
+}
+
+tr td.user-field {
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+/* Стилизация селектора множественного выбора (Пройденные курсы) */
+select[multiple] {
+    color: #226100;
+    border-radius: 7px;
+    border: 1px solid #72b44e;
+    padding: 5px;
+    min-width: 500px;
+    min-height: 117px;
+    font-family: inherit;
+}
+
+/* Стилизация input type="file" как у фото */
+input[type="file"] {
+    border: 1px solid #72b44e !important;
+    border-radius: 7px !important;
+    padding: 5px !important;
+    color: #226100 !important;
+    background-color: #ffffff !important;
+    font-size: 17px !important;
+    width: 500px !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+    cursor: pointer !important;
+}
+
+
+option[selected] {
+    background-color:#e3f2dc;
+}
+
+.fields.enumeration.field-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+.fields.enumeration-checkbox label {
+    color: #226100 !important;
+    font-size: 17px !important;
+}
+
+.fields.enumeration-checkbox input[type="radio"] {
+    margin-right: 6px !important;
+    max-width: 40px !important;
+}
+
+.user-field {
+    width:fit-content !important;
+}
+
+/* Ограничиваем область с радиокнопками */
+td.user-field .fields.enumeration.field-wrap {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+}
+
+/* Применим display: inline-block для radio-контейнеров */
+td.user-field .fields.enumeration-checkbox {
+    display: inline-block !important;
+    white-space: nowrap;
+}
+
+/* Сам радиокнопка + подпись — аккуратно */
+td.user-field .fields.enumeration-checkbox label {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 5px;
+    color: #226100;
+    font-size: 17px;
+    padding: 2px 4px;
+    flex-direction: row-reverse !important;
+    gap: 6px;
+}
+
+/* Радио — сброс фиксированной ширины */
+td.user-field .fields.enumeration-checkbox input[type="radio"] {
+    width: auto !important;
+    height: auto !important;
+}
+
+input[type="radio"] {
+    all: unset;
+    appearance: radio;
+    margin-right: 6px;
+    width: auto !important;
+    height: auto !important;
+}
+
+input[type="button"] {
+    min-width: unset;
+    border: 1px solid #72b44e !important;
+    border-radius: 7px !important;
+    padding: 5px !important;
+    color: #226100 !important;
+    background-color: #F5FFEA  !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    width: 300px !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+input[type="button"]:hover {
+    background-color: #ffffff !important;
+}
+
+/* input[type="radio"] {
+    color: #72b44e !important;
+} */
+/* 
+input[type="radio"]:checked::before {
+
+} */
+
+
+.webform-field-upload {
+    border: 1px solid #72b44e !important;
+    border-radius: 7px !important;
+    padding: 5px !important;
+    color: #226100 !important;
+    background-color: #F5FFEA !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    width: 300px !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+.webform-field-upload:hover {
+    background-color: #ffffff !important;
+}
+
+form {
+    background-color: #f9fff3 !important;
+    border-radius: 30px;
+    border: 1px solid #c4e5b3 !important;
+    font-size: 17px;
+}

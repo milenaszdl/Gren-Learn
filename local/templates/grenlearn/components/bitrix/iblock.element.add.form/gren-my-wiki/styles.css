@@ -1,0 +1,55 @@
+.btn-success {
+    background-color: #85b969 !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+    margin-right: 10px;
+}
+
+.btn-success:hover {
+    background-color: #ffffff !important;
+    color: #226100!important;
+    border: none !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+}
+
+.btn-outline-success {
+    background-color: #ffffff !important;
+    color: #226100!important;
+    border: none !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+    margin-right: 10px;
+}
+
+.btn-outline-success:hover {
+    background-color: #85b969 !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+}
+
+.btn-secondary {
+    background-color: #ffffff !important;
+    color: #98962c!important;
+    border: none !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+}
+
+.btn-secondary:hover {
+    background-color: #98962c !important;
+    color: #ffffff!important;
+    border: none !important;
+    padding: 12px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+}

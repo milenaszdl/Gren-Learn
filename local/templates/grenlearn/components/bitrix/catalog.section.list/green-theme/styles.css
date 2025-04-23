@@ -1,0 +1,81 @@
+.section-list {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    padding: 8px 25px;
+    border: 1px solid #91cc71;
+    border-radius: 15px;
+    width: 60%;
+    font-weight: 300;
+}
+
+.search-form input::placeholder {
+    color: #91cc71;
+    opacity: 1; /* чтобы в некоторых браузерах не было полупрозрачности */
+}
+
+.search-form input:focus {
+    border-color: #226100;
+    color: #226100;
+    outline: none;
+}
+
+.search-form button {
+    margin-left: 15px;
+    padding: 8px 25px;
+    background: #91cc71;
+    color: #fff;
+    border-radius: 15px;
+    border:none;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.search-form button:hover {
+    margin-left: 15px;
+    padding: 8px 25px;
+    background: #74ac56;
+    color: #F5FFEA;
+    border-radius: 15px;
+    border:none;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.section-item {
+    border-bottom: 1px solid #91cc71;
+    border-radius: 10px;
+    padding: 18px 18px;
+}
+
+.section-item:last-child {
+    border-bottom: none;
+}
+
+.section-item a {
+    color: #226100 !important;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.section-item:hover {
+    background: #F5FFEA;
+}
+
+.section-item a:hover {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.pagination {
+    margin-top: 20px;
+}

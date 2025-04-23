@@ -1,0 +1,112 @@
+.video-gallery .video-item:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+.video-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    align-items: center;
+    justify-content: center;
+    font-weight: 400 !important;
+        /* Градиент */
+        background: linear-gradient(to left, #a5af36, #226100);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
+
+.plyr__volume input[type=range] {
+    color: #b4bd49 !important;
+}
+
+.plyr__control--overlaid {
+    background: #b4bd49 !important;
+}
+
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 2.5em; /* высота двух строк */
+}
+
+.col-md-3 {
+    width: 30rem !important;
+}
+
+.mt-4{
+    width: 1440px !important;
+}
+
+.col-md-6 input {
+    padding: 8px 25px;
+    border: 1px solid #91cc71;
+    border-radius: 15px;
+    width: 100%;
+    font-weight: 300;
+}
+
+.col-md-6 input::placeholder {
+    color: #91cc71;
+    opacity: 1; /* чтобы в некоторых браузерах не было полупрозрачности */
+}
+
+.col-md-6 input:focus {
+    border-color: #226100 !important;
+    color: #226100;
+    outline: none;
+}
+
+.col-md-6 button {
+    margin-left: 15px;
+    padding: 8px 25px;
+    background: #91cc71;
+    color: #fff;
+    border-radius: 15px;
+    border:none;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.col-md-6 button:hover {
+    margin-left: 15px;
+    padding: 8px 25px;
+    background: #74ac56;
+    color: #F5FFEA;
+    border-radius: 15px;
+    border:none;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.form-select {
+    padding: 8px 25px !important;
+    border: 1px solid #91cc71 !important;
+    border-radius: 15px !important;
+    width: 100% !important;
+    font-weight: 300 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
